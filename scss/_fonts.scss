@@ -1,0 +1,49 @@
+
+
+@font-face {
+    font-family: 'Charter bold italic';
+    src: url('../fonts/charter/webfonts/charter_bold_italic-webfont.eot');
+    src: url('../fonts/charter/webfonts/charter_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/charter/webfonts/charter_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Charter bold';
+    src: url('../fonts/charter/webfonts/charter_bold-webfont.eot');
+    src: url('../fonts/charter/webfonts/charter_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/charter/webfonts/charter_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Charter italic';
+    src: url('../fonts/charter/webfonts/charter_italic-webfont.eot');
+    src: url('../fonts/charter/webfonts/charter_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/charter/webfonts/charter_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Charter regular';
+    src: url('../fonts/charter/webfonts/charter_regular-webfont.eot');
+    src: url('../fonts/charter/webfonts/charter_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/charter/webfonts/charter_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  @font-face {
+    font-family: "lucidagranderegular", Arial, Helvetica, sans-serif;
+    src: url(../fonts/lucinagrande/lucinagranderegular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Lucida Grande', Arial, Helvetica, sans-serif;
+    src: url('../fonts/lucidagrande/LucidaGrande.eot');
+    src: url('../fonts/lucidagrande/LucidaGrande.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lucidagrande/LucidaGrande.woff2') format('woff2'),
+        url('../fonts/lucidagrande/LucidaGrande.woff') format('woff'),
+        url('../fonts/lucidagrande/LucidaGrande.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

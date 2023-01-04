@@ -1,0 +1,14 @@
+@mixin hover-line {
+    content: "";
+            position: absolute;
+            bottom: -0.5em;
+            left: 0;
+            height: 2px;
+            width: 0%;
+            background-color: currentColor;
+}
+@function cllamp($a, $b) {
+    $m: calc(($b - $a) / (90 - 24.375));
+    $y: $a - $m * 18.75;
+    @return clamp($a * 1rem, $y * 1rem + $m * 100vw, $b * 1rem);
+}

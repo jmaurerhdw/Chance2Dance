@@ -1,0 +1,279 @@
+@font-face {
+  font-family: "Charter bold italic";
+  src: url("../fonts/charter/webfonts/charter_bold_italic-webfont.eot");
+  src: url("../fonts/charter/webfonts/charter_bold_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/charter/webfonts/charter_bold_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Charter bold";
+  src: url("../fonts/charter/webfonts/charter_bold-webfont.eot");
+  src: url("../fonts/charter/webfonts/charter_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/charter/webfonts/charter_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Charter italic";
+  src: url("../fonts/charter/webfonts/charter_italic-webfont.eot");
+  src: url("../fonts/charter/webfonts/charter_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/charter/webfonts/charter_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Charter regular";
+  src: url("../fonts/charter/webfonts/charter_regular-webfont.eot");
+  src: url("../fonts/charter/webfonts/charter_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/charter/webfonts/charter_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lucidagranderegular", Arial, Helvetica, sans-serif;
+  src: url(../fonts/lucinagrande/lucinagranderegular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+  src: url("../fonts/lucidagrande/LucidaGrande.eot");
+  src: url("../fonts/lucidagrande/LucidaGrande.eot?#iefix") format("embedded-opentype"), url("../fonts/lucidagrande/LucidaGrande.woff2") format("woff2"), url("../fonts/lucidagrande/LucidaGrande.woff") format("woff"), url("../fonts/lucidagrande/LucidaGrande.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 90rem;
+  margin-inline: auto;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: currentColor;
+}
+a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5em;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: currentColor;
+  transition: width 0.2s ease-out;
+}
+a:hover {
+  position: relative;
+}
+a:hover::after {
+  width: 100%;
+}
+
+p {
+  font-size: clamp(0.6rem, 0.4285714286rem + 0.9142857143vw, 1.2rem);
+  line-height: 1.4em;
+}
+
+h2 {
+  font-family: Charter regular, "Times New Roman", Times, serif;
+}
+
+h3 {
+  font-family: Charter regular, "Times New Roman", Times, serif;
+  font-size: clamp(0.6rem, 0.4857142857rem + 0.6095238095vw, 1rem);
+  font-weight: 400;
+  letter-spacing: 0.5ch;
+}
+
+h4 {
+  font-family: Charter regular, "Times New Roman", Times, serif;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+header .navigation {
+  background-color: #1e1e1e;
+}
+header .navigation ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.75em 0;
+}
+header .navigation ul li {
+  list-style-type: none;
+}
+header .navigation ul li a {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: 0.6ch;
+  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+
+main .introduction {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  max-height: 66.9375rem;
+}
+main .introduction_content {
+  grid-row: 1/span 2;
+  grid-column: 1/span 1;
+  padding-top: clamp(1rem, 0.2142857143rem + 4.1904761905vw, 3.75rem);
+  padding-left: clamp(1rem, -2.0357142857rem + 16.1904761905vw, 11.625rem);
+  padding-right: clamp(1rem, 0.7142857143rem + 1.5238095238vw, 2rem);
+}
+main .introduction_content p:has(+ p) {
+  margin-bottom: 0.5em;
+}
+main .introduction_image {
+  grid-row: 1/span 3;
+  position: relative;
+  z-index: 3;
+}
+main .introduction_image-left {
+  position: absolute;
+  bottom: 0;
+  left: clamp(1rem, -0.6071428571rem + 8.5714285714vw, 6.625rem);
+  z-index: 2;
+}
+main .introduction_image-left img {
+  position: relative;
+  bottom: -2.5rem;
+  max-width: 636px;
+}
+main .absolventen {
+  background-color: rgb(208, 208, 210);
+  padding-bottom: 4.5rem;
+}
+main .absolventen > * {
+  width: 74.166%;
+  max-width: 66.749rem;
+  margin-inline: clamp(5rem, 3.1071428571rem + 10.0952380952vw, 11.625rem);
+}
+main .absolventen h3 {
+  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  padding-block: 4.5rem;
+  letter-spacing: 0.6ch;
+}
+main .absolventen .gallery-three {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+main .absolventen .gallery-three > div {
+  position: relative;
+}
+main .absolventen .gallery-three > div > img {
+  max-width: 254px;
+}
+main .absolventen .gallery-three > div > h4 {
+  margin-top: 6.25rem;
+  letter-spacing: 0.4ch;
+  font-size: 1.1rem;
+}
+main .absolventen .gallery-three::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  background-color: rgb(111, 12, 93);
+  width: 100%;
+  bottom: 4rem;
+  left: 0;
+}
+main .anmeldung {
+  width: 74.166%;
+  max-width: 66.749rem;
+  margin-inline: auto;
+  margin-block: 6rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.45ch;
+  font-size: 0.8rem;
+  position: relative;
+}
+main .anmeldung::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  background-color: rgb(111, 12, 93);
+  width: 100%;
+  bottom: -5rem;
+  left: 0;
+}
+main .kursfinder {
+  width: 66.667%;
+  max-width: 60rem;
+  margin-inline: auto;
+}
+main .kursfinder input {
+  width: 100%;
+  margin-block: 7.5rem 6.25rem;
+  padding: 0.5em 0 0.75em 1.25em;
+  border: 1px solid rgb(151, 151, 151);
+  border-radius: 7px;
+  background-color: rgb(242, 242, 247);
+  letter-spacing: 0.3ch;
+}
+main .kursfinder input::placeholder {
+  color: rgb(164, 164, 167);
+}
+main .kursfinder .dancer {
+  position: relative;
+  background-color: transparent;
+  height: 20rem;
+}
+main .kursfinder .dancer img {
+  position: absolute;
+  left: -17%;
+  top: -10rem;
+  height: 125%;
+  width: min-content;
+  object-fit: contain;
+}
+main .kursfinder .dancer h2 {
+  letter-spacing: 0.3ch;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+footer {
+  margin-block: -4rem 2rem;
+  width: 74.166%;
+  max-width: 66.749rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer div h2 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 0.2ch;
+  font-size: 1.1rem;
+  line-height: 1.5em;
+  align-items: center;
+}
+footer .socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .socials_icons a {
+  margin-right: 0.5rem;
+}/*# sourceMappingURL=main.css.map */
