@@ -7,8 +7,13 @@
             width: 0%;
             background-color: currentColor;
 }
-@function cllamp($a, $b) {
+@function f-clamp($a, $b) {
     $m: calc(($b - $a) / (90 - 24.375));
     $y: $a - $m * 18.75;
+    @return clamp($a * 1rem, $y * 1rem + $m * 100vw, $b * 1rem);
+}
+@function f-clamp_1030($a, $b) {
+    $m: calc(($b - $a) / (90 - 64.375));
+    $y: $a - $m * 64.375;
     @return clamp($a * 1rem, $y * 1rem + $m * 100vw, $b * 1rem);
 }

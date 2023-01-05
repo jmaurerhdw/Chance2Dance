@@ -52,13 +52,18 @@ img {
 header {
     & .navigation {
         background-color: $secondary;
-        & ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 2rem;
+        & .desktop_menu {
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: space-around;
             align-items: center;
-            padding: 1.75em 0;
+            padding: 2.5em 0;
+            gap: f-clamp_1030(2.5, 7);
             & li {
                 list-style-type: none;
                 
@@ -69,6 +74,12 @@ header {
                     letter-spacing: 0.6ch;
                     font-family: 'Lucida Grande', Arial, Helvetica, sans-serif;
                 }
+            }
+        }
+        &_mobile {
+            display: none;
+            & .mobile_menu {
+                display: none;
             }
         }
     }
@@ -94,13 +105,13 @@ main {
         &_image {
             grid-row: 1 / span 3;
             position: relative;
-            z-index: 3;
+            z-index: 2;
         }
         &_image-left {
             position: absolute;
             bottom: 0;
             left: cllamp(1, 6.625);
-            z-index: 2;
+            z-index: 1;
             
             & img {
                 position: relative;
@@ -236,3 +247,5 @@ footer {
         }
         }
 }
+
+@import "media-queries.scss";
