@@ -93,3 +93,28 @@
         }
     }
 }
+@media (max-width: 1040px){
+    main {
+        & .absolventen {
+            & .gallery-three {
+                & > div > h4 {
+                    position: relative;
+                    margin-bottom: 3rem;
+                    margin-top: 3rem;
+                    &::after {
+                    position: absolute;
+                    content: "";
+                    height: 4px;
+                    width: 100%;
+                    top: -1.5rem;
+                    left: 0;
+                    background-color: $purple;
+                    }
+                }
+                &::after {
+                    content: none;
+                }
+            }
+        }
+    }
+}
